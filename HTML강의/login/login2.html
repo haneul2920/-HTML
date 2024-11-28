@@ -1,0 +1,36 @@
+	
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>회원가입 예제 1</title>
+
+</head>
+
+<body>
+
+    <h1>회원가입</h1>
+
+    <form action="/signup" method="post">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="age">나이:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label>
+        <br><br>
+        <input type="submit" value="회원가입">
+    </form>
+
+</body>
+
+</html>

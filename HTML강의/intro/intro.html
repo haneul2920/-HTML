@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 인트로</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('images/aimage.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 4em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 0.5em;
+      color: rgb(194, 181, 181);
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      color: #d1baba;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 15px; 
+      justify-content: center;
+      margin-top: 1em;
+    }
+
+    button {
+      padding: 15px 40px;
+      font-size: 1.2em;
+      background-color: #ffffff;
+      color: #0d0d0d;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #0d0d0d;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .github-btn {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #ffffff;
+      border-radius: 50px;
+      font-size: 1.2em;
+      color: #0d0d0d;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .github-btn img {
+      width: 60px;
+      height: 30px;
+      margin-right: center;
+      content: url('images/GitHub_Logo.png');
+    }
+    .github-btn:hover img {
+      content: url('images/GitHub_Logo_White.png');
+    }
+
+    .github-btn:hover {
+      background-color: #0d0d0d;
+      color: white;
+      border: 2px solid white;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>김한울</h1>
+    <p>풀스택 개발자 | 창의적 솔루션 제공</p>
+    <div class="button-container">
+      <button onclick="goToPortfolio()">포트폴리오 보기</button>
+      <button class="github-btn" onclick="goToGitHub()">
+        <img src="images/github.png" alt="GitHub Logo">
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function goToPortfolio() {
+      window.location.href = '#'; 
+    }
+    function goToGitHub() {
+      window.location.href = 'https://github.com/haneul2920';
+    }
+  </script>
+</body>
+</html>
