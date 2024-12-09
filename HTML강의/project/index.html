@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>생산 관리</title>
+    <meta name="Production management" content="생산 관리 페이지">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="home">     
+        <div id="sidebar">
+            <button id="homeButton" onclick="goHome()"> 
+                <img src="images/homeicon.png" alt="홈 아이콘" class="icon">
+            </button>
+            <button id="Community">
+                <img src="images/icons8-게시판-150.png" alt="게시판 아이콘" class="icon">
+            </button>
+        </div>
+    </div>
+    <div id="time"></div>
+    <script src="time.js"></script>
+    <div class="page-content">
+        <div class="button-container">
+            <a class="button button-1" href="equipment_status.html" >
+                <img src="images/iconscnc.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>설비 현황</a>
+            <a class="button button-2" href="productionSchedule.html">
+                <img src="images/icons8-방-파인더-80.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>생산 일정</a>
+            <a class="button button-3" href="equipment_check.html">
+                <img src="images/icons8-수리-100.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>설비 점검</a>
+            <a class="button button-4" href="qualityControl.html">
+                <img src="images/icons8-돋보기-128.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>품질 관리</a>
+            <a class="button button-5" href="resourceManagement.html">
+                <img src="images/icons8-건축-자재-128.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>자원 관리</a>
+            <a class="button button-6" href="productionReport.html">
+                <img src="images/icons8-생산-100.png" alt="아이콘" class="icon_button ">
+                <span class="arrow"></span>생산 보고</a>
+        </div><!-- /.button-container -->
+    </div>
+    <div class="page-transition"></div>
+    <script src="page.js"></script>
+</body>
